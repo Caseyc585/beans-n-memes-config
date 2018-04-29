@@ -2,14 +2,8 @@ eureka:
   client:
     shouldFetchRegistry: false
   instance:
-    port: 6000
-mysql:
+    port: 6500
+mongo:
   client:
-    database: steeltoe1
-    username: root
-    password: steeltoe
-postgres:
-  client:
-    database: steeltoe1
-    username: steeltoe
-    password: steeltoe
+    connection: mongodb://localhost
+    database: roaster
